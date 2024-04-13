@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Open_Sans as FontSans } from 'next/font/google';
 import './globals.css';
 import { cn } from '@/lib/utils';
+import Navbar from '@/components/custom/Navbar';
 
 const font = FontSans({ subsets: ['latin'], variable: '--font-sans' });
 
@@ -19,10 +20,11 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          'min-h-screen bg-background font-sans antialiased',
+          'min-h-screen bg-background font-sans antialiased bg-[#121212] text-[#989898] px-10',
           font.variable,
         )}
       >
+        <Navbar />
         {children}
       </body>
     </html>
