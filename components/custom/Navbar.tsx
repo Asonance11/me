@@ -2,6 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import Logo from './Logo';
 import { Github, Linkedin, Mail } from 'lucide-react';
+import { ThemeToggle } from './theme-toggle';
 
 const Navbar = () => {
   return (
@@ -24,6 +25,8 @@ const Navbar = () => {
         >
           <Linkedin className="h-5 w-5" />
         </Link>
+
+        <ThemeToggle />
       </div>
     </nav>
   );

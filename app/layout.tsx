@@ -3,6 +3,7 @@ import { Open_Sans as FontSans } from 'next/font/google';
 import './globals.css';
 import { cn } from '@/lib/utils';
 import Navbar from '@/components/custom/Navbar';
+import { ThemeProvider } from '@/components/providers/theme-provider';
 
 const font = FontSans({ subsets: ['latin'], variable: '--font-sans' });
 
@@ -20,12 +21,20 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          'min-h-screen bg-background font-sans antialiased bg-[#121212] text-[#989898] px-10',
+          'min-h-screen bg-background font-sans antialiased bg-[#F4F3EF] dark:bg-[#121212] dark:text-[#989898] text-[#242223] px-10',
           font.variable,
         )}
       >
-        <Navbar />
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem={false}
+          storageKey="theme"
+          disableTransitionOnChange
+        >
+          <Navbar />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
