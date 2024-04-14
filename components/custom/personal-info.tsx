@@ -1,7 +1,20 @@
 import React from 'react';
 
 const PersonalInfo = () => {
-  return <div>Personal Info</div>;
+  return (
+    <section className="lg:max-w-[65%] mt-20">
+      <h4 className="text-lg">Hi, I'm Samuel Oluwadabira Adigun.</h4>
+      <h2 className="mt-3 text-4xl font-bold dark:text-[#E3E3E3]">
+        I'm a software developer based in Ibadan, Nigeria.
+      </h2>
+      <p className="mt-3">
+        I'm deeply passionate about crafting applications that tackle real-world
+        challenges and contribute positively to society. At the moment, I'm
+        actively seeking new opportunities while unwinding with my favorite
+        pastimes: listening to music and diving into video games.
+      </p>
+    </section>
+  );
 };
 
 export default PersonalInfo;

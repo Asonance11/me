@@ -1,3 +1,9 @@
+import PersonalInfo from '@/components/custom/personal-info';
+
 export default function Home() {
-  return <main>This is the beginning</main>;
+  return (
+    <main>
+      <PersonalInfo />
+    </main>
+  );
 }
