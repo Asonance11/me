@@ -11,7 +11,7 @@ const PersonalInfo = () => {
         I'm deeply passionate about crafting applications that tackle real-world
         challenges and contribute positively to society. At the moment, I'm
         actively seeking new opportunities while unwinding with my favorite
-        pastimes: listening to music and diving into video games.
+        pastimes: listening to music and reading different forms of literature.
       </p>
     </section>
   );
