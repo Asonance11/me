@@ -54,8 +54,11 @@ const Skills = () => {
     <section className="mt-10">
       <h2 className="text-xl font-semibold dark:text-[#E3E3E3]">Skills</h2>
       <div className="mt-4 flex items-center flex-wrap gap-2">
-        {skills.map((skill) => (
-          <div className="px-4 py-2 border border-[#242223] dark:border-[#989898] dark:text-[#E4E4E4]">
+        {skills.map((skill, index) => (
+          <div
+            key={index}
+            className="px-4 py-2 border border-[#242223] dark:border-[#989898] dark:text-[#E4E4E4]"
+          >
             {skill}
           </div>
         ))}
