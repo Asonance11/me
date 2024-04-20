@@ -21,13 +21,13 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          'min-h-screen bg-background font-sans antialiased bg-[#F4F3EF] dark:bg-[#121212] dark:text-[#989898] text-[#242223] px-10',
+          'min-h-screen bg-background font-sans antialiased bg-[#F4F3EF] dark:bg-[#121212] dark:text-[#989898] text-[#242223] px-20',
           font.variable,
         )}
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="light"
           enableSystem={false}
           storageKey="theme"
           disableTransitionOnChange
