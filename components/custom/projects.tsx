@@ -27,6 +27,7 @@ const Projects = () => {
       <div className="grid grid-cols-2 gap-4 mt-6">
         {projects.map((project, index) => (
           <motion.div
+            key={index}
             variants={fadeInAnimationVariant}
             initial="initial"
             whileInView="animate"
