@@ -12,7 +12,7 @@ const ProjectCards = ({ project }: ProjectCardsProps) => {
   const { name, description, github, tech, live } = project;
 
   return (
-    <Card className="bg-transparent dark:bg-transparent border-[#242223] dark:border-[#989898] ">
+    <Card className="h-full bg-transparent dark:bg-transparent border-[#242223] dark:border-[#989898] ">
       <CardHeader className="flex flex-row items-center justify-between gap-2">
         <CardTitle>{name}</CardTitle>
         <div className="flex items-center gap-2">
