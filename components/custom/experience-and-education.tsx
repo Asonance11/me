@@ -26,18 +26,18 @@ const ExperienceAndEducation = () => {
         <h1 className="text-2xl dark:text-[#E3E3E3] font-semibold">
           Experience and Education
         </h1>
-        <Experience />
-        <Education />
-        <Skills />
       </Reveal>
+      <Experience />
+      <Education />
+      <Skills />
     </section>
   );
 };
 
 const Experience = () => {
   return (
-    <Reveal>
-      <div className="mt-6">
+    <div className="mt-6">
+      <Reveal>
         <div className="flex items-end justify-between gap-x-2">
           <div className="flex flex-col gap-y-1">
             <h3 className="font-medium text-xl">Software Engineer Intern</h3>
@@ -51,15 +51,15 @@ const Experience = () => {
           clientele. Collaborated effectively with teams to elevate
           functionalities across company products.
         </p>
-      </div>
-    </Reveal>
+      </Reveal>
+    </div>
   );
 };
 
 const Education = () => {
   return (
-    <Reveal>
-      <section className="mt-12">
+    <section className="mt-12">
+      <Reveal>
         <h2 className="text-xl font-semibold dark:text-[#E3E3E3]">Education</h2>
         <div className="mt-4 flex items-end justify-between gap-x-2">
           <div className="flex flex-col gap-y-1">
@@ -68,15 +68,17 @@ const Education = () => {
           </div>
           <p>2020 -2024</p>
         </div>
-      </section>
-    </Reveal>
+      </Reveal>
+    </section>
   );
 };
 
 const Skills = () => {
   return (
     <section className="mt-10">
-      <h2 className="text-xl font-semibold dark:text-[#E3E3E3]">Skills</h2>
+      <Reveal>
+        <h2 className="text-xl font-semibold dark:text-[#E3E3E3]">Skills</h2>
+      </Reveal>
       <div className="mt-4 flex items-center flex-wrap gap-2">
         {skills.map((skill, index) => (
           <motion.div
