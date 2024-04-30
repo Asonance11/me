@@ -5,7 +5,7 @@ import Footer from "@/components/custom/Footer";
 
 export default function Home() {
   return (
-    <main>
+    <main className="max-w-screen-xl">
       <PersonalInfo />
       <ExperienceAndEducation />
       <Projects />

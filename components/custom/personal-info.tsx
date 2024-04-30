@@ -4,7 +4,7 @@ import Reveal from "@/components/utils/Reveal";
 const PersonalInfo = () => {
   return (
     <Reveal>
-      <section className="min-h-screen flex items-center mt-[-150px]">
+      <section className="min-h-screen flex items-center mt-[-200px] md:mt-[-150px]">
         <div className="lg:max-w-[65%] mt-20">
           <h4 className="text-lg">Hi, I&apos;m Samuel Oluwadabira Adigun.</h4>
           <h2 className="mt-4 text-5xl font-bold dark:text-[#E3E3E3]">

@@ -21,7 +21,7 @@ const fadeInAnimationVariant = {
 
 const ExperienceAndEducation = () => {
   return (
-    <section className="mt-20 min-h-[50vh]">
+    <section className="mt-0 md:mt-20 min-h-[50vh]">
       <Reveal>
         <h1 className="text-2xl dark:text-[#E3E3E3] font-semibold">
           Experience and Education

@@ -1,12 +1,12 @@
-import Link from 'next/link';
-import React from 'react';
-import Logo from './Logo';
-import { Github, Linkedin, Mail } from 'lucide-react';
-import { ThemeToggle } from './theme-toggle';
+import Link from "next/link";
+import React from "react";
+import Logo from "./Logo";
+import { Github, Linkedin, Mail } from "lucide-react";
+import { ThemeToggle } from "./theme-toggle";
 
 const Navbar = () => {
   return (
-    <nav className="w-full sticky flex items-center justify-between py-4">
+    <nav className="w-full flex items-center justify-between py-4">
       <Link href="/">
         <Logo />
       </Link>

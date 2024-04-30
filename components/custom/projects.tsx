@@ -24,7 +24,7 @@ const Projects = () => {
     <section className="mt-20 min-h-[50vh]">
       <h1 className="text-2xl dark:text-[#E3E3E3] font-semibold">Projects</h1>
 
-      <div className="grid grid-cols-2 gap-4 mt-6">
+      <div className="flex flex-col md:grid md:grid-cols-2 gap-4 mt-6">
         {projects.map((project, index) => (
           <motion.div
             key={index}
