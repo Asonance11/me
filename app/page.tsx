@@ -5,11 +5,13 @@ import Footer from "@/components/custom/Footer";
 
 export default function Home() {
   return (
-    <main className="max-w-screen-xl">
-      <PersonalInfo />
-      <ExperienceAndEducation />
-      <Projects />
-      <Footer />
+    <main className="flex items-center justify-center">
+      <div className="max-w-screen-xl">
+        <PersonalInfo />
+        <ExperienceAndEducation />
+        <Projects />
+        <Footer />
+      </div>
     </main>
   );
 }
