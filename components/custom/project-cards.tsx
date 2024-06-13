@@ -16,12 +16,12 @@ const ProjectCards = ({ project }: ProjectCardsProps) => {
       <CardHeader className="flex flex-row items-center justify-between gap-2">
         <CardTitle>{name}</CardTitle>
         <div className="flex items-center gap-2">
-          <Link href={github}>
+          <Link href={github} target="_blank">
             <Github className="h-5 w-5" />
           </Link>
 
           {live && (
-            <Link href={live}>
+            <Link href={live} target="_blank">
               <Link2 className="h-5 w-5" />
             </Link>
           )}
