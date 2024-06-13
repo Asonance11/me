@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Roboto_Slab as FontSans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
-import Navbar from "@/components/custom/Navbar";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 
 const font = FontSans({
@@ -42,8 +41,7 @@ export default function RootLayout({
           storageKey="theme"
           disableTransitionOnChange
         >
-          <Navbar />
-          {children}
+          <div>{children}</div>
         </ThemeProvider>
       </body>
     </html>
