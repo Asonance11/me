@@ -35,13 +35,14 @@ export const projects: IProject[] = [
       "A fullstack messaging app inspired by discord with channel management, real time messaging, and other essential features.",
     tech: ["Next.Js", "TypeScript", "Tailwind CSS", "PostgreSQL", "Clerk"],
     github: "https://github.com/Asonance11/drocsid",
+    live: "https://drocsid-production.up.railway.app/",
   },
   {
     name: "Blog API",
     description:
       "An API for writing blogs and managing user data. The system allows users to publish blog posts and manage their account details.",
     tech: ["Express JS", "TypeScript"],
-    github: "https://github.com/Asonance11/blog-api",
+    github: "https://github.com/Asonance11/blog-api/",
   },
   {
     name: "Painting Pictures",
